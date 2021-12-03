@@ -23,6 +23,10 @@ public class Player : MonoBehaviour, IDamageable, IObservable
 
     List<IObserver> _allObservers = new List<IObserver>();
 
+    public ParticleSystem damage;
+    public ParticleSystem addLife;
+    public ParticleSystem addSpeed;
+
     void Awake()
     {
         EventManager.Subscribe("GameOver", Dead);
@@ -92,6 +96,7 @@ public class Player : MonoBehaviour, IDamageable, IObservable
     {
         life -= dmg;
         NotifyToObservers(life, maxLife);
+        damage.Play();
         if (life < minLife)
         {
             EventManager.Trigger("GameOver");
