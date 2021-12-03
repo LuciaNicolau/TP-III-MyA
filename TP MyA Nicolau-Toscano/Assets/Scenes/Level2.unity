@@ -252,7 +252,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifeBar: {fileID: 1984653650}
-  player: {fileID: 0}
+  player: {fileID: 888586630}
 --- !u!1 &74493835
 GameObject:
   m_ObjectHideFlags: 0
@@ -1636,6 +1636,12 @@ ParticleSystem:
     type: 3}
   m_PrefabInstance: {fileID: 1253625763}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &1253625767 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3821093497349853274, guid: b3dd0d13430b1a24db88c8b7f05aa294,
+    type: 3}
+  m_PrefabInstance: {fileID: 1253625763}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1320647257
 GameObject:
   m_ObjectHideFlags: 0
@@ -1922,6 +1928,11 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
+      objectReference: {fileID: 1253625767}
+    - target: {fileID: 6755677819337157513, guid: 662f14e8cbc92984ea45307d30f2dd04,
+        type: 3}
+      propertyPath: fireRate
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6755677819337157515, guid: 662f14e8cbc92984ea45307d30f2dd04,
         type: 3}

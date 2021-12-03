@@ -22,8 +22,6 @@ public class Movement
 
     public void Move(float h)
     {
-        //_transform.position += _transform.right * h * _speed * Time.deltaTime;
-        _transform.Translate(Vector3.forward * Time.deltaTime * _speed * h);
-
+       _transform.Translate(Vector3.forward * Time.deltaTime * _speed * h);
     }
 }

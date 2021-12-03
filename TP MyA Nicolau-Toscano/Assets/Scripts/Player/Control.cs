@@ -27,8 +27,7 @@ public class Control
 
         if (_movementInput.x != 0)
             _movement.Move(_movementInput.x);
-        if (_movementInput.y >= 1)
-            _movement.Jump();
+        
     }
 
     void NormalControls()
@@ -54,5 +53,11 @@ public class Control
             player.managerUI.InactivePause();
         }
 
+    }
+
+    public void Jump()
+    {
+        if (Input.GetKeyDown(KeyCode.W))
+            _movement.Jump();
     }
 }

@@ -55,7 +55,10 @@ public class Player : MonoBehaviour, IDamageable, IObservable
         transform.position += Vector3.forward * _speed * Time.deltaTime;
     }
 
-
+    private void OnCollisionStay(Collision collision)
+    {
+        _control.Jump();
+    }
     void OnCollisionEnter(Collision collision)
     {
         var collectable = collision.gameObject.GetComponent<ICollectable>();
@@ -67,6 +70,7 @@ public class Player : MonoBehaviour, IDamageable, IObservable
                 collectable.Collect();
             }
         }
+
     }
 
     private void OnTriggerEnter(Collider other)

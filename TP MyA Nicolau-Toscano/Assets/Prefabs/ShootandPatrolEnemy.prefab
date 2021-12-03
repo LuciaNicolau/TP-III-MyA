@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 1586733106736239282}
   - component: {fileID: 6442346425225941827}
   - component: {fileID: 7784968452193719486}
+  - component: {fileID: 7104753034939519107}
   m_Layer: 0
   m_Name: ShootandPatrolEnemy
   m_TagString: Untagged
@@ -122,4 +123,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bullet: {fileID: 8866493575242546917, guid: 8e5d3125fa13da9419f524f1d72e1da6, type: 3}
+  fireRate: 1
   player: {fileID: 0}
+--- !u!136 &7104753034939519107
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8019991663570822291}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 2.9712944
+  m_Height: 5.94259
+  m_Direction: 1
+  m_Center: {x: -4.9198825e-15, y: 0, z: 2.4712946}
